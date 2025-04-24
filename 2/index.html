@@ -1,0 +1,20 @@
+<!DOCTYPE html><!--ブラウザへhtml5の記載を宣言-->
+<!--記載しないと、バージョンが1つ古い状態で設定されることになる（クイリクスモード（quirks mode））-->
+<html lang="ja"><!--ブラウザへ日本語を言語としたページであることを宣言
+    →検索エンジンや読み上げソフトで日本語に設定するよう指示-->
+    <head>
+        <!--メタ情報（基盤情報）の設定-->
+        <meta charset="UTF-8"><!--文字コード設定-->
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <!--このページで使用するスクリプト（ソースコード）の言語設定-->
+        <!--html5では<script>内でtype設定するらしく、不要でもある-->
+        <script type="text/javascript" src="main.js"></script>
+        <!--外部jsファイルの読み込み
+        type="text/javascript"はhtml5以降では省略可-->
+    </head>
+
+    <!--以下ユーザーインターファイスの設定-->
+    <body>
+        <canvas id="main" width="600" height="600"></canvas>
+    </body>
+</html>
